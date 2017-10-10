@@ -22,7 +22,17 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // ROUTES
 // Root Route
-
+app.get('/pickanumber', function (request, response) {
+	var x = request.query.x;
+	var y = request.query.y;
+	if (number > 10) {
+		alert("Too high");
+	} else if (number < 10) {
+		alert("Too low");
+	} else {
+		alert("Nailed it!");
+	}
+}
 
 // Gallery View Route
 
